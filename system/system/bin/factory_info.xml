@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<data>
+    <Attribute Module="Product" station="RAUD" check_item="prod_info" cmd_target="adb" cmd_str="shell 'gpi'" result_check_target="" result_check_cmd="" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+    <Attribute Module="Memory" station="RAUD" check_item="ghr_t" cmd_target="adb" cmd_str="shell 'mem_parser --ufs'" result_check_target="" result_check_cmd="" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+    <Attribute Module="Memory" station="RAUD" check_item="gsortqb_t" cmd_target="adb" cmd_str="shell 'mem_parser --ddr'" result_check_target="" result_check_cmd="" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+    <Attribute Module="Memory" station="RAUD" check_item="ghr_t" cmd_target="" cmd_str="" result_check_target="adb" result_check_cmd="shell 'ghr'" result_log_target="adb" result_log="pull /data/local/tmp/ghr_fail.log" fatal_info_target="adb" fatal_info_cmd="shell 'fatal_error --set ghr'"></Attribute>
+    <Attribute Module="Memory" station="RAUD" check_item="gsort_t" cmd_target="" cmd_str="" result_check_target="adb" result_check_cmd="shell 'gsort --check'" result_log_target="adb" result_log="pull /data/local/tmp/gsort_result.txt" fatal_info_target="adb" fatal_info_cmd="shell 'fatal_error --set gsort'"></Attribute>
+    <Attribute Module="Memory" station="RAUD" check_item="" cmd_target="" cmd_str="" result_check_target="adb" result_check_cmd="shell 'mec'" result_log_target="" result_log="" fatal_info_target="adb" fatal_info_cmd="shell 'fatal_error --set mec'"></Attribute>
+    <Attribute Module="Memory" station="MBT" check_item="" cmd_target="" cmd_str="" result_check_target="adb" result_check_cmd="shell 'uet -e \'/system/bin/ghr > /data/local/tmp/ghr_bt.log\''" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+    <Attribute Module="Memory" station="MBT" check_item="" cmd_target="" cmd_str="" result_check_target="adb" result_check_cmd="shell 'ghr'" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+    <Attribute Module="Sensor" station="RAUD" check_item="calibration" cmd_target="adb" cmd_str="shell 'test-nusensors -a data'" result_check_target="" result_check_cmd="" result_log_target="" result_log="" fatal_info_target="" fatal_info_cmd=""></Attribute>
+
+</data>
